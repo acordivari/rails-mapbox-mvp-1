@@ -1,4 +1,12 @@
 <h2>Hello World</h2>
-<p>
-  The time is now: <%= Time.now %>
-</p>
+
+<div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYWRjb3JkMTk5MiIsImEiOiJja240M2FnNHExZHJ4MnZtaHllZDhob3B4In0.mbGHnmydppTxfiX4Uh9Vww';
+var map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+    center: [-122.4, 37.7], // starting position [lng, lat]
+    zoom: 9 // starting zoom
+});
+</script>
