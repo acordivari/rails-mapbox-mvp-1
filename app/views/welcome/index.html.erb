@@ -1,0 +1,32 @@
+<h2>Hello World</h2>
+
+
+<form method="post" action="/delivery_locations">
+  <label for="name">Name</label>
+  <input type="name" name="name" id="name">
+
+  <label for="pronouns">Pronouns</label>
+  <input type="pronouns" name="pronouns" id="pronouns">
+
+  <label for="address">Address</label>
+  <input type="address" name="address" id="address">
+
+  <label for="phone_number">Phone Number</label>
+  <input type="phone_number" name="phone_number" id="phone_number">
+
+  <label for="delivery_instructions">Delivery Instructions</label>
+  <input type="delivery_instructions" name="delivery_instructions" id="delivery_instructions">
+
+  <input type="submit" name="Sign up">
+</form>
+
+<div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYWRjb3JkMTk5MiIsImEiOiJja240M2FnNHExZHJ4MnZtaHllZDhob3B4In0.mbGHnmydppTxfiX4Uh9Vww';
+var map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+    center: [-122.4, 37.7], // starting position [lng, lat]
+    zoom: 9 // starting zoom
+});
+</script>
